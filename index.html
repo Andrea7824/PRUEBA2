@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV / Portafolio Académico Interactivo</title>
+    <meta name="description" content="Currículum digital y portafolio académico interactivo de Andrea Estefanía Quimbita Villamarín" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-blue bg-aurora">
+    <div class="background-layer" id="bgLayer"></div>
+    <div class="particle-field" id="particleField"></div>
+
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo-wrap" id="logoPreviewWrap">
+          <svg class="logo-bottle" viewBox="0 0 64 64" aria-label="Logo de botella">
+            <rect x="20" y="8" width="24" height="10" rx="4" fill="currentColor" />
+            <rect x="18" y="18" width="28" height="38" rx="8" fill="currentColor" opacity="0.9" />
+            <path d="M24 18h16v8H24z" fill="rgba(255,255,255,0.4)" />
+            <path d="M23 32c4 2 14 2 18 0" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div>
+          <h1>Quimbita Villamarín Andrea Estefania</h1>
+          <p>Ingeniería en Software • Portafolio Académico</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <label class="search-box" aria-label="Buscar temas">
+          <span>🔎</span>
+          <input id="themeSearch" type="search" placeholder="Buscar temas" />
+        </label>
+        <nav class="nav-pills" aria-label="Navegación">
+          <button data-target="inicio" class="nav-btn active">Inicio</button>
+          <button data-target="unidad-1" class="nav-btn">Unidad 1</button>
+          <button data-target="unidad-2" class="nav-btn">Unidad 2</button>
+          <button data-target="unidad-3" class="nav-btn">Unidad 3</button>
+        </nav>
+        <div class="header-buttons">
+          <button class="icon-btn" id="customizeBtn" title="Personalización">⚙️</button>
+          <button class="icon-btn" id="backgroundBtn" title="Cambiar fondo">🎨</button>
+          <a class="icon-btn whatsapp-btn" href="https://wa.me/593981266402?text=Hola%20Andrea%2C%20me%20gustar%C3%ADa%20contactarme%20contigo" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section id="inicio" class="panel active">
+        <div class="hero-card">
+          <div class="hero-photo-card">
+            <div class="avatar-frame">
+              <img src="img/perfil.jpeg" alt="Fotografía de Andrea" />
+            </div>
+            <div class="hero-badge">CV Profesional • Portafolio Académico</div>
+          </div>
+          <div class="hero-content">
+            <p class="eyebrow">Currículum digital</p>
+            <h2>Quimbita Villamarín Andrea Estefanía</h2>
+            <p class="lead">Estudiante con enfoque en desarrollo de software, aprendizaje continuo y fundamentos sólidos en computación, lógica y programación.</p>
+            <div class="info-grid">
+              <div class="info-card">
+                <span>Edad</span>
+                <strong>19 años</strong>
+              </div>
+              <div class="info-card">
+                <span>Dirección</span>
+                <strong>Parroquia Alaquez</strong>
+              </div>
+              <div class="info-card">
+                <span>Colegio</span>
+                <strong>Unidad Educativa Luis Fernando Ruiz</strong>
+              </div>
+              <div class="info-card">
+                <span>Estudios</span>
+                <strong>Bachiller en Ciencias</strong>
+              </div>
+              <div class="info-card">
+                <span>Hobby</span>
+                <strong>Natación</strong>
+              </div>
+            </div>
+            <div class="cta-row">
+              <a class="btn primary" href="https://wa.me/593981266402?text=Hola%20Andrea%2C%20quiero%20contactarte" target="_blank" rel="noopener">Contactarme por WhatsApp</a>
+              <button class="btn secondary" id="scrollToUnits">Ver unidades académicas</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="unidad-1" class="panel">
+        <div class="unit-header">
+          <div>
+            <p class="eyebrow">Unidad 1</p>
+            <h2>Fundamentos de Computación</h2>
+          </div>
+          <div class="progress-card">
+            <span id="unit1ProgressLabel">0/10 preguntas</span>
+            <div class="progress-bar"><div id="unit1ProgressBar"></div></div>
+            <small id="unit1ScoreLabel">Puntaje: 0/10</small>
+          </div>
+        </div>
+        <div id="unit1Content" class="topic-grid"></div>
+      </section>
+
+      <section id="unidad-2" class="panel">
+        <div class="unit-header">
+          <div>
+            <p class="eyebrow">Unidad 2</p>
+            <h2>Algoritmos y Modelado de Problemas</h2>
+          </div>
+          <div class="progress-card">
+            <span id="unit2ProgressLabel">0/8 preguntas</span>
+            <div class="progress-bar"><div id="unit2ProgressBar"></div></div>
+            <small id="unit2ScoreLabel">Puntaje: 0/8</small>
+          </div>
+        </div>
+        <div id="unit2Content" class="topic-grid"></div>
+      </section>
+
+      <section id="unidad-3" class="panel">
+        <div class="unit-header">
+          <div>
+            <p class="eyebrow">Unidad 3</p>
+            <h2>Programación y Estructuras de Control</h2>
+          </div>
+          <div class="progress-card">
+            <span id="unit3ProgressLabel">0/10 preguntas</span>
+            <div class="progress-bar"><div id="unit3ProgressBar"></div></div>
+            <small id="unit3ScoreLabel">Puntaje: 0/10</small>
+          </div>
+        </div>
+        <div id="unit3Content" class="topic-grid"></div>
+      </section>
+    </main>
+
+    <aside class="customizer-panel" id="customizerPanel">
+      <div class="panel-card">
+        <div class="panel-head">
+          <h3>Personalización</h3>
+          <button id="closeCustomizer" class="close-btn">✕</button>
+        </div>
+        <label>
+          <span>Tema visual</span>
+          <select id="themeSelect">
+            <option value="blue">Azul</option>
+            <option value="purple">Morado</option>
+            <option value="green">Verde</option>
+            <option value="cyan">Cian</option>
+            <option value="pink">Rosa</option>
+            <option value="orange">Naranja</option>
+            <option value="white">Blanco</option>
+            <option value="dark">Oscuro</option>
+          </select>
+        </label>
+        <label>
+          <span>Fondo animado</span>
+          <select id="backgroundSelect">
+            <option value="aurora">Aurora</option>
+            <option value="waves">Ondas</option>
+            <option value="grid">Grid</option>
+            <option value="cosmic">Cósmico</option>
+            <option value="nebula">Nebulosa</option>
+          </select>
+        </label>
+        <label>
+          <span>Cambiar logo</span>
+          <input id="logoInput" type="file" accept=".png,.jpg,.jpeg,.svg,.pdf,image/png,image/jpeg,image/svg+xml,application/pdf" />
+        </label>
+        <div class="logo-preview" id="logoPreview"></div>
+      </div>
+    </aside>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose">✕</button>
+      <img id="lightboxImage" alt="Imagen ampliada" />
+    </div>
+
+    <a class="fab whatsapp-fab" href="https://wa.me/593981266402?text=Hola%20Andrea%2C%20me%20gustar%C3%ADa%20hablar%20contigo" target="_blank" rel="noopener" title="Contactar por WhatsApp">💬</a>
+    <button class="scroll-top" id="scrollTopBtn" title="Volver arriba">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
